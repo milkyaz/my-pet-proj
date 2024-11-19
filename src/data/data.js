@@ -9,28 +9,15 @@ const data = [
   },
   {
     id: 2,
-    image: "https://example.com/image2.jpg",
+    image:
+      "https://avatars.mds.yandex.net/get-marketcms/944743/img-c444c5a9-2658-4f66-9469-9c24412da652.jpeg/optimize",
     name: "Московский Кремль",
   },
   {
     id: 3,
-    image: "https://example.com/image3.jpg",
+    image:
+      "https://avatars.mds.yandex.net/get-marketcms/944743/img-c444c5a9-2658-4f66-9469-9c24412da652.jpeg/optimize",
     name: "Эрмитаж",
-  },
-  {
-    id: 4,
-    image: "https://example.com/image4.jpg",
-    name: "Петергоф",
-  },
-  {
-    id: 5,
-    image: "https://example.com/image5.jpg",
-    name: "Казанский Кремль",
-  },
-  {
-    id: 6,
-    image: "https://example.com/image6.jpg",
-    name: "Байкал",
   },
 ];
 
