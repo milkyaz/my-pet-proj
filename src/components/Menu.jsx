@@ -9,7 +9,10 @@ function Menu() {
   return (
     <>
       <CssBaseline />
-      <Container maxWidth="sm">
+      <Container
+        maxWidth="sm"
+        style={{ display: "flex", justifyContent: "center" }}
+      >
         <Box
           sx={{
             // bgcolor: "#cfe8fc",
@@ -20,47 +23,37 @@ function Menu() {
             width: 375,
             borderRadius: "32px",
             border: "1px solid black",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            marginTop: 5,
           }}
         >
           <Typography
             variant="h2"
             style={{
-              fontSize: 93,
+              fontSize: "30px",
               display: "flex",
               justifyContent: "space-around",
-              paddingTop: 93,
+              width: "372px",
+              marginTop: "194px",
             }}
           >
-            Aspen
+            Достопримечательности
           </Typography>
+
           <Box
             style={{
               width: 300,
-              marginTop: 334,
-              marginLeft: 32,
-              marginRight: 43,
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "flex-end",
+              marginTop: "352px",
+              paddingLeft: "20px",
             }}
           >
             {/* <img src="./public/bg-main.png" alt="" /> */}
-            <Typography
-              variant="subtitle1"
-              gutterBottom
-              style={{
-                fontSize: 22,
-                marginBottom: 0,
-                color: "white",
-              }}
-            >
-              Plan your
-            </Typography>
+
             <Typography variant="h3" gutterBottom style={{ color: "white" }}>
-              Luxurious
+              город
               <br />
-              Vacation
+              Астрахань
             </Typography>
           </Box>
           <Link to="/placelist" style={{ textDecoration: "none" }}>
@@ -74,7 +67,7 @@ function Menu() {
                 borderRadius: 16,
               }}
             >
-              Contained
+              Смотреть
             </Button>
           </Link>
         </Box>

@@ -8,7 +8,7 @@ import data from "../data/data";
 
 export function PlaceList() {
   const [searchQuery, setSearchQuery] = useState("");
-
+  console.log(data.length);
   const filteredData = data.filter((el) =>
     el.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -24,7 +24,6 @@ export function PlaceList() {
           width: 375,
           borderRadius: "32px",
           border: "1px solid black",
-          marginTop: 5,
           paddingLeft: "20px",
           paddingRight: "20px",
         }}
@@ -42,73 +41,102 @@ export function PlaceList() {
           sx={{
             display: "flex",
             flexWrap: "wrap",
-            justifyContent: "space-between",
-            gap: "10px",
+            justifyContent: "space-around",
             height: "445px",
             overflow: "auto",
           }}
         >
           {filteredData.map((el) => (
-            <Link
+            <Box
               key={el.id}
-            
-
-              to={`/place/${el.id}`}
-              style={{
-                textDecoration: "none",
-                width: "140px",
-                height: "140px",
+              sx={{
+                marginBottom: "90px",
               }}
             >
-              <Box
-                sx={{
-                  width: "150px",
-                  height: "209px",
-                  transition: "background-color 0.3s",
-                  "&:hover": {
-                    backgroundColor: "#f0f0f0",
-                    borderRadius: "14px",
-                  },
+              <Link
+                to={`/place/${el.id}`}
+                style={{
+                  textDecoration: "none",
+                  width: "140px",
+                  height: "140px",
                 }}
               >
-                <img
-                  src={el.image}
-                  alt={el.name}
-                  style={{ height: 150, width: 150, borderRadius: 20 }}
-                />
-
-                <Typography
-                  variant="h6"
-                  gutterBottom
-                  style={{
-                    marginTop: "10px",
-                    color: "black",
-                    lineHeight: 1,
-                    textAlign: "center",
-                  }}
+                <Box
                   sx={{
-                    transition: "background-color 0.3s",
-                    "&:hover": {
-                      backgroundColor: "#f0f0f0",
-                      borderRadius: "14px",
-                    },
+                    width: "140px",
+                    height: "140px",
                   }}
                 >
-                  {el.name}
-                </Typography>
-              </Box>
-            </Link>
+                  <img
+                    src={el.image}
+                    alt={el.name}
+                    style={{
+                      width: "140px",
+                      height: "140px",
+                      borderRadius: 20,
+                    }}
+                  />
+
+                  <Typography
+                    variant="h6"
+                    gutterBottom
+                    style={{
+                      marginTop: "10px",
+                      color: "black",
+                      lineHeight: 1,
+                      textAlign: "center",
+                    }}
+                  >
+                    {el.name}
+                  </Typography>
+                </Box>
+              </Link>
+            </Box>
           ))}
         </Box>
 
-        <Box className="button" sx={{ paddingTop: "90px" }}>
-          <Link to="/placelist" style={{ textDecoration: "none" }}>
+        <Box className="place__counter">
+          <Typography
+            variant="h6"
+            gutterBottom
+            style={{
+              marginTop: "41px",
+              color: "black",
+              lineHeight: 1,
+              textAlign: "center",
+            }}
+          >
+            Количество достопримечательностей
+          </Typography>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
+            {" "}
+            <Typography
+              variant="h6"
+              gutterBottom
+              style={{
+                marginTop: "20px",
+                color: "black",
+                lineHeight: 1,
+                textAlign: "center",
+                padding: "5px",
+                width: "40px",
+                border: "1px solid black",
+                borderRadius: "10px",
+              }}
+            >
+              {data.length}
+            </Typography>
+          </Box>
+        </Box>
+
+        <Box className="button" sx={{ paddingTop: "0px" }}>
+          <Link to="/" style={{ textDecoration: "none" }}>
             <Button
               variant="contained"
               style={{
                 width: 311,
                 display: "flex",
-                margin: "102px 12px 0px",
+                margin: "45px 12px 0px",
                 padding: "14px",
                 borderRadius: 16,
               }}
