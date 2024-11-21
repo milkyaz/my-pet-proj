@@ -1,13 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import CssBaseline from "@mui/material/CssBaseline";
-import { Menu } from "./components/Menu";
-import { PlaceDetail } from "./components/Place";
-import { PlaceList } from "./components/PlaceList";
+import { Menu } from "./components/Menu/Menu";
+import { PlaceDetail } from "./components/Place/Place";
+import { PlaceList } from "./components/PlaceList/PlaceList";
+import "./App.css";
 
 function App() {
   return (
     <Router>
-      <CssBaseline />
       <Routes>
         <Route path="/" element={<Menu />} />
         <Route path="*" element={<div>Страница не найдена</div>} />
