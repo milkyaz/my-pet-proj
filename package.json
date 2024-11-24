@@ -8,8 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-     "predeploy": "yarn run build",
-      "deploy": "gh-pages -d dist  -m 'Automatically update gh-pages [skip ci]'"
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist  -m 'Automatically update gh-pages [skip ci]'"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
