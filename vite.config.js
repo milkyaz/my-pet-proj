@@ -5,7 +5,11 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   build: {
-    commonjsOptions: { transformMixedEsModules: true }, // Change
+    commonjsOptions: { transformMixedEsModules: true },
+    rollupOptions: {
+      input: "src/main.js",
+    },
   },
   base: "/my-pet-proj",
+  publicDir: 'public',
 });
