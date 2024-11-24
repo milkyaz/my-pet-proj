@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     commonjsOptions: { transformMixedEsModules: true },
     rollupOptions: {
-      input: "src/main.js",
+      input: "src/main.jsx",
     },
   },
   base: "/my-pet-proj",
