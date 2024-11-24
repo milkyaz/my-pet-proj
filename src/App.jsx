@@ -6,7 +6,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/my-pet-proj/">
       <Routes>
         <Route path="/" element={<Menu />} />
         <Route path="*" element={<div>Страница не найдена</div>} />
