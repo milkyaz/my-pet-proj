@@ -1,5 +1,6 @@
 {
   "name": "pet-project",
+  "homepage":"https://milkyaz.github.io/my-pet-proj",
   "private": true,
   "version": "0.0.0",
   "type": "module",
