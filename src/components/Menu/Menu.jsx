@@ -6,6 +6,10 @@ import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import "./index.css";
 
+const IMAGES = {
+  image1: new URL("./img/bg-main.png", import.meta.url).href,
+};
+
 function Menu() {
   return (
     <>
@@ -18,7 +22,7 @@ function Menu() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-evenly",
-          backgroundImage: 'url("./public/bg-main.png")',
+          backgroundImage: `url(${IMAGES.image1})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

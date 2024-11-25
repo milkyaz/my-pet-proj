@@ -10,6 +10,5 @@ export default defineConfig({
       input: "src/main.jsx",
     },
   },
-  base: "/my-pet-proj",
-  publicDir: 'public',
+  publicDir: "public",
 });
