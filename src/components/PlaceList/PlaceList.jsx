@@ -49,7 +49,7 @@ export function PlaceList() {
             }}
           >
             <Link
-              to={`/place/${el.id}`}
+              to={`/my-pet-proj/place/${el.id}`}
               style={{
                 textDecoration: "none",
                 width: "140px",

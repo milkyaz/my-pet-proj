@@ -10,8 +10,8 @@ function App() {
       <Routes>
         <Route path="/my-pet-proj/" element={<Menu />} />
         <Route path="*" element={<div>Страница не найдена</div>} />
-        <Route path="/place/:id" element={<PlaceDetail />} />
-        <Route path="/placelist" element={<PlaceList />} />
+        <Route path="/my-pet-proj/place/:id" element={<PlaceDetail />} />
+        <Route path="/my-pet-proj/placelist" element={<PlaceList />} />
       </Routes>
     </Router>
   );

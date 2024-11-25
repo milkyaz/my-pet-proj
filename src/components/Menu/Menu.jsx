@@ -60,7 +60,7 @@ function Menu() {
           className="menu__button"
           sx={{ display: "flex", justifyContent: "center" }}
         >
-          <Link to="/placelist" style={{ textDecoration: "none" }}>
+          <Link to="/my-pet-proj/placelist" style={{ textDecoration: "none" }}>
             <Button
               variant="contained"
               style={{
