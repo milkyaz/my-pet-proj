@@ -130,7 +130,7 @@ export function PlaceList() {
         className="button"
         sx={{ paddingTop: "0px", display: "flex", justifyContent: "center" }}
       >
-        <Link to="/" style={{ textDecoration: "none" }}>
+        <Link to="/my-pet-proj/" style={{ textDecoration: "none" }}>
           <Button
             variant="contained"
             style={{

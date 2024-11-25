@@ -8,7 +8,7 @@ function App() {
   return (
     <Router >
       <Routes>
-        <Route path="/" element={<Menu />} />
+        <Route path="/my-pet-proj/" element={<Menu />} />
         <Route path="*" element={<div>Страница не найдена</div>} />
         <Route path="/place/:id" element={<PlaceDetail />} />
         <Route path="/placelist" element={<PlaceList />} />
