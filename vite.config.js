@@ -11,5 +11,5 @@ export default defineConfig({
     },
   },
   publicDir: "public",
-  base: "/my-pet-proj",
+  base: "/my-pet-proj/",
 });
